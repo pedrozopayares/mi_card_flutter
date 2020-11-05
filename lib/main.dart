@@ -13,41 +13,77 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            mainAxisSize: MainAxisSize.max,
+          child: Column(
             children: [
-              Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.red,
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/hF_V2-9Y_200x200.jpg'),
               ),
-              SizedBox(
-                width: 30.0,
+              Text(
+                'Javier Pedrozo',
+                style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  fontSize: 30.0,
+                  color: Colors.white,
+                ),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    height: 100.0,
-                    width: 100.0,
-                    color: Colors.yellow,
-                  ),
-                  Container(
-                    height: 100.0,
-                    width: 100.0,
-                    color: Colors.green,
-                  ),
-                ],
-              ),
-              SizedBox(
-                width: 30.0,
+              Text(
+                'FLUTTER DEVELOPER',
+                style: TextStyle(
+                  fontFamily: 'Source Sans Pro',
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.teal.shade100,
+                  letterSpacing: 2.5,
+                ),
               ),
               Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.blue,
+                padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                color: Colors.white,
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      '+57 123 456 356',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                color: Colors.white,
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      'javier@email.com',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
